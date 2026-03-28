@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #07101f 0%, #0b1020 100%);
+  color: #e5eefb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white/80;
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-card/90 p-5 shadow-glow backdrop-blur;
+}
+
+.metric {
+  @apply rounded-xl border border-white/10 bg-white/5 p-4;
+}
